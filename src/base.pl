@@ -1,9 +1,3 @@
-% ===========================================================================
-% MECANIZA - Base de Conocimiento Automotriz Ampliada
-%
-% Estructura:
-%   problema_info(Id, Nombre, Solucion, Recomendacion, Categoria, Asset)
-% ===========================================================================
 
 problema_info(
 	bateria_descargada,
@@ -41,7 +35,6 @@ problema_info(
 	'assets/tanque_combustible_vacio.png'
 ).
 
-% Compatibilidad con la ortografia anterior
 problema_info(tanque_comustible_vacio, Nombre, Solucion, Recomendacion, Categoria, Asset) :-
 	problema_info(tanque_combustible_vacio, Nombre, Solucion, Recomendacion, Categoria, Asset).
 
