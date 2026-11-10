@@ -1,3 +1,6 @@
+% ===========================================================================
+% MECANIZA - Motor de Inferencia y Controlador del Caso de Uso
+% ===========================================================================
 
 :- dynamic respuesta/2.
 
@@ -23,7 +26,6 @@ diagnosticos(Problemas) :-
 	findall(Problema, diagnostico(Problema), Problemas).
 
 responder(Pregunta, Respuesta) :-
-	pregunta_actual(Pregunta, _),
 	guardar_respuesta(Pregunta, Respuesta).
 
 responder_si :-
@@ -48,7 +50,8 @@ finalizado :-
 
 resultado(problema(Id, Nombre, Solucion, Recomendacion, Categoria, Asset)) :-
 	diagnostico_actual(Id),
-	problema_info(Id, Nombre, Solucion, Recomendacion, Categoria, Asset).
+	problema_info(Id, Nombre, Solucion, Recomendacion, Categoria, Asset),
+	!.
 
 preguntas_pendientes(Preguntas) :-
 	findall(Pregunta-Texto, pregunta_pendiente(Pregunta, Texto), Preguntas).
