@@ -1,11 +1,3 @@
-% ===========================================================================
-% MECANIZA - Interfaz Grafica de Usuario (XPCE)
-%
-% Implementa las vistas segun la documentacion y prototipos:
-%   - home_view: Pantalla principal de bienvenida y acceso al diagnostico.
-%   - form_view: Presentacion iterativa de preguntas con opciones Si / No.
-%   - diagnostic_view: Presentacion del diagnostico final o flujo alternativo.
-% ===========================================================================
 
 :- use_module(library(pce)).
 

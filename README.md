@@ -4,7 +4,7 @@ Sistema experto interactivo para el diagnóstico de fallas comunes en vehículos
 
 ## Ejecución de la Aplicación
 
-### 1. Interfaz Gráfica (XPCE) - Modo Principal
+### 1. Interfaz Gráfica (XPCE)
 
 Para ejecutar la aplicación con la interfaz gráfica:
 
@@ -19,7 +19,7 @@ También puede invocarse desde la consola de Prolog con:
 ?- iniciar.
 ```
 
-### 2. Modo Consola (CLI)
+### 2. Modo Consola
 
 Para entornos sin interfaz gráfica o terminales puramente texto:
 
