@@ -123,15 +123,8 @@ mostrar_home_view(D) :-
 	new(BtnExit, mecaniza_button('salir', message(D, destroy), 180, 48)),
 	send(BtnExit, font, font(helvetica, bold, 15)),
 	estilizar_boton(BtnExit, '#e03131', '#fff5f5'),
-	centrar_horizontal(D, BtnExit, 350),
+	centrar_horizontal(D, BtnExit, 350).
 	
-	% Pie de pagina
-	new(Footer, text('MECANIZA\njot1x4k @ 2026')),
-	send(Footer, font, font(helvetica, oblique, 12)),
-	send(Footer, colour, colour('#868e96')),
-	send(Footer, format, center),
-	centrar_horizontal(D, Footer, 530).
-
 % Inicia el diagnostico en el motor y pasa a form_view
 iniciar_flujo_diagnostico(D) :-
 	iniciar_diagnostico,
