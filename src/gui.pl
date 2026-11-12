@@ -160,7 +160,7 @@ mostrar_form_view(D) :-
 	    XSi is max(20, (DW - AnchoBloque) // 2),
 	    XNo is XSi + 180 + 50,
 	    send(D, display, BtnSi, point(XSi, 320)),
-	    send(D, display, BtnNo, point(XNo, 320)),
+	    send(D, display, BtnNo, point(XNo, 320))
 	).
 
 % Procesa la respuesta del usuario y evalua el estado del sistema
