@@ -161,14 +161,6 @@ mostrar_form_view(D) :-
 	    XNo is XSi + 180 + 50,
 	    send(D, display, BtnSi, point(XSi, 320)),
 	    send(D, display, BtnNo, point(XNo, 320)),
-	    
-	    % Pie de pagina
-	    new(Footer, text('MECANIZA\njot1x4k @ 2026')),
-	    send(Footer, font, font(helvetica, oblique, 12)),
-	    send(Footer, colour, colour('#868e96')),
-	    send(Footer, format, center),
-	    centrar_horizontal(D, Footer, 530)
-	;   evaluar_siguiente_paso(D)
 	).
 
 % Procesa la respuesta del usuario y evalua el estado del sistema
@@ -233,14 +225,7 @@ mostrar_diagnostic_view(D, exito(Nombre, Solucion, Recomendacion)) :-
 	new(BtnMenu, mecaniza_button('Volver al menu', message(@prolog, volver_al_menu, D), 260, 54)),
 	send(BtnMenu, font, font(helvetica, bold, 16)),
 	estilizar_boton(BtnMenu, '#1e1e1e', '#f1f3f5'),
-	centrar_horizontal(D, BtnMenu, 415),
-	
-	% Pie de pagina
-	new(Footer, text('MECANIZA\njot1x4k @ 2026')),
-	send(Footer, font, font(helvetica, oblique, 12)),
-	send(Footer, colour, colour('#868e96')),
-	send(Footer, format, center),
-	centrar_horizontal(D, Footer, 530).
+	centrar_horizontal(D, BtnMenu, 415).
 
 mostrar_diagnostic_view(D, sin_diagnostico) :-
 	send(D, clear),
@@ -271,13 +256,7 @@ mostrar_diagnostic_view(D, sin_diagnostico) :-
 	new(BtnMenu, mecaniza_button('Volver al menu', message(@prolog, volver_al_menu, D), 260, 54)),
 	send(BtnMenu, font, font(helvetica, bold, 16)),
 	estilizar_boton(BtnMenu, '#1e1e1e', '#f1f3f5'),
-	centrar_horizontal(D, BtnMenu, 350),
-	
-	new(Footer, text('MECANIZA\njot1x4k @ 2026')),
-	send(Footer, font, font(helvetica, oblique, 12)),
-	send(Footer, colour, colour('#868e96')),
-	send(Footer, format, center),
-	centrar_horizontal(D, Footer, 530).
+	centrar_horizontal(D, BtnMenu, 350).
 
 % Reinicia el motor y retorna a home_view
 volver_al_menu(D) :-
