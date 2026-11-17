@@ -3,110 +3,110 @@
 
 pregunta(
 	bateria_descargada,
-	'¿Al girar la llave de encendido, el tablero de instrumentos permanece totalmente apagado?'
+	'¿Al intentar arrancar el auto, el tablero queda completamente apagado (sin ninguna luz encendida)?'
 ).
 
 pregunta(
 	motor_arranque_defectuoso,
-	'¿Al accionar la llave de encendido, escucha unicamente un chasquido o clic en el motor?'
+	'¿Al intentar arrancar, solo escuchas un clic o chasquido y el motor no gira?'
 ).
 
 pregunta(
 	alternador_defectuoso,
-	'¿El testigo con simbolo de bateria permanece encendido en el tablero con el motor en marcha?'
+	'¿Con el motor ya encendido, sigue prendida la luz de la bateria en el tablero?'
 ).
 
 
 pregunta(
 	tanque_combustible_vacio,
-	'¿El indicador de combustible del tablero marca que el tanque se encuentra vacio?'
+	'¿La aguja de la gasolina marca que el tanque esta vacio (en la E o en reserva)?'
 ).
 
 
 pregunta(
 	motor_sobrecalentado,
-	'¿La aguja de temperatura del motor se ubica en la zona roja de advertencia?'
+	'¿La aguja de temperatura del motor esta en la zona roja?'
 ).
 
 pregunta(
 	radiador_con_fuga,
-	'¿Observa salir vapor de agua o humo blanco por debajo del capo del vehiculo?'
+	'¿Sale vapor o humo blanco de la parte delantera del auto (debajo del capo)?'
 ).
 
 
 pregunta(
 	nivel_aceite_bajo,
-	'¿Se encuentra encendido el testigo rojo de la aceitera en el cuadro de instrumentos?'
+	'¿Esta encendida en el tablero la luz roja con forma de aceitera?'
 ).
 
 pregunta(
 	desgaste_arbol_levas,
-	'¿Escucha un golpeteo metalico continuo tipo tictac proveniente del motor?'
+	'¿Escuchas un golpeteo metalico seguido (como un tictac) que viene del motor?'
 ).
 
 pregunta(
 	fuga_liquido_frenos,
-	'¿Al pisar el pedal de freno, este se hunde hasta el fondo del piso sin ofrecer resistencia?'
+	'¿Al pisar el freno, el pedal se va hasta el fondo y se siente flojo, sin resistencia?'
 ).
 
 pregunta(
 	frenos_desgastados,
-	'¿Al presionar el pedal del freno, escucha un chirrido metalico agudo constante?'
+	'¿Al frenar, escuchas un chirrido agudo y constante?'
 ).
 
 pregunta(
 	discos_freno_alabeados,
-	'¿El volante de la direccion vibra fuertemente de forma exclusiva al frenar?'
+	'¿El volante vibra con fuerza solo cuando frenas?'
 ).
 
 pregunta(
 	sensor_mal_calibrado,
-	'¿El testigo Check Engine de fallo de motor permanece encendido en el tablero?'
+	'¿Sigue encendida en el tablero la luz de advertencia del motor (Check Engine)?'
 ).
 
 pregunta(
 	inyectores_sucios,
-	'¿Al acelerar el vehiculo siente tirones bruscos de manera intermitente?'
+	'¿Al acelerar, el auto da tirones o jaloneos de vez en cuando?'
 ).
 
 pregunta(
 	bujias_defectuosas,
-	'¿El motor vibra excesivamente cuando el vehiculo se encuentra detenido en ralenti?'
+	'¿Con el auto detenido y el motor encendido, vibra mucho o se sacude?'
 ).
 
 pregunta(
 	bobina_encendido_defectuosa,
-	'¿Le cuesta al motor arrancar de forma prolongada en las mananas frias?'
+	'¿En las mananas frias te cuesta mas que de costumbre encender el motor?'
 ).
 
 pregunta(
 	falla_embrague,
-	'¿Al acelerar el motor sube de revoluciones pero el vehiculo apenas gana velocidad?'
+	'¿Al acelerar, el motor sube de revoluciones pero el auto casi no avanza?'
 ).
 
 pregunta(
 	sincronizadores_transmision,
-	'¿La palanca de cambios se siente trabada o raspan las marchas al meterlas?'
+	'¿La palanca de cambios se siente dura o las marchas raspan al meterlas?'
 ).
 
 pregunta(
 	presion_neumaticos_baja,
-	'¿El volante de la direccion se desvia con fuerza hacia un lado al circular en linea recta?'
+	'¿El volante se va solo hacia un lado cuando manejas en linea recta?'
 ).
 
 pregunta(
 	direccion_asistida_defectuosa,
-	'¿Siente el volante de la direccion anormalmente duro o pesado al maniobrar?'
+	'¿El volante se siente muy duro o pesado al girarlo?'
 ).
 
 pregunta(
 	filtro_aire_obstruido,
-	'¿El tubo de escape expulsa humo negro visible cuando acelera a fondo?'
+	'¿Sale humo negro por el escape cuando aceleras a fondo?'
 ).
 
 pregunta(
 	desgaste_anillos_motor,
-	'¿El tubo de escape expulsa humo azulado constante con olor a aceite quemado?'
+	'¿Sale humo azulado por el escape de forma constante, con olor a aceite quemado?'
 ).
 
 guardar_respuesta(Pregunta, Entrada) :-
@@ -117,8 +117,8 @@ guardar_respuesta(Pregunta, Entrada) :-
 	->  retractall(respuesta(tanque_comustible_vacio, _)),
 	    assertz(respuesta(tanque_comustible_vacio, Valor))
 	;   Pregunta == tanque_comustible_vacio
-	->  retractall(respuesta(tanque_combustible_vacio, _)),
-	    assertz(respuesta(tanque_combustible_vacio, Valor))
+	->  retractall(respuesta(tanque_comustible_vacio, _)),
+	    assertz(respuesta(tanque_comustible_vacio, Valor))
 	;   true
 	),
 	!.

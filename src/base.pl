@@ -1,27 +1,27 @@
 
 problema_info(
 	bateria_descargada,
-	'Bateria descargada o bornes desconectados',
-	'Recarga la bateria con un cargador externo o utiliza cables de puente desde otro vehiculo (conectando primero el polo positivo + y luego negativo -).',
-	'Comprueba que los bornes esten apretados y limpios de sulfato, y reemplaza la bateria si ha superado los 3 anos de vida util.',
+	'Bateria descargada o cables sueltos',
+	'Carga la bateria con un cargador o usa cables para arrancar con otro auto (conecta primero el cable positivo + y luego el negativo -).',
+	'Revisa que los cables de la bateria esten bien apretados y limpios, y cambiala si tiene mas de 3 anos.',
 	cat_electrico,
 	'assets/bateria_descargada.png'
 ).
 
 problema_info(
 	motor_arranque_defectuoso,
-	'Motor o solenoide de arranque averiado',
-	'Golpea suavemente el cuerpo del motor de arranque con una herramienta ligera para destrabar el solenoide y acude de inmediato a un taller electrico.',
-	'Realiza mantenimiento preventivo al motor de arranque cada 80.000 km, cambiando carbones, bujes y revisando el rele de encendido.',
+	'Falla del motor de arranque (marcha)',
+	'Da unos golpes suaves con una herramienta liviana en el motor de arranque para intentar liberarlo y lleva el auto a un taller electrico.',
+	'Hazle mantenimiento al motor de arranque cada 80.000 km y revisa el rele de encendido.',
 	cat_electrico,
 	'assets/motor_arranque_defectuoso.png'
 ).
 
 problema_info(
 	alternador_defectuoso,
-	'Alternador defectuoso o correa de accesorios rota',
-	'Deten el uso de accesorios electricos (radio, aire acondicionado) y dirijete a un taller para reparar el alternador o sustituir la correa.',
-	'Verifica periodicamente la tension de la correa del alternador y mide el voltaje con multimetro (debe marcar entre 13.8V y 14.4V en marcha).',
+	'Alternador en mal estado o correa rota',
+	'Apaga la radio y el aire acondicionado para no gastar mas bateria y ve a un taller a revisar el alternador o cambiar la correa.',
+	'Revisa seguido la correa del alternador y su voltaje con un medidor; debe marcar entre 13.8V y 14.4V con el motor encendido.',
 	cat_electrico,
 	'assets/alternador_defectuoso.png'
 ).
@@ -29,8 +29,8 @@ problema_info(
 problema_info(
 	tanque_combustible_vacio,
 	'Tanque de combustible vacio',
-	'Reposta combustible de inmediato. Si el vehiculo se apago en la via, adquiere combustible en una estacion de servicio usando un bidon homologado.',
-	'Evita circular con el indicador en nivel de reserva para impedir que la bomba de combustible succione impurezas o se sobrecaliente.',
+	'Carga combustible de inmediato. Si el auto se quedo en la via, consigue combustible en una estacion usando un bidon adecuado.',
+	'No manejes siempre en reserva, para que la bomba de combustible no aspire suciedad ni se caliente.',
 	cat_combustible,
 	'assets/tanque_combustible_vacio.png'
 ).
@@ -40,153 +40,153 @@ problema_info(tanque_comustible_vacio, Nombre, Solucion, Recomendacion, Categori
 
 problema_info(
 	motor_sobrecalentado,
-	'Motor sobrecalentado (temperatura critica)',
-	'Deten el vehiculo de inmediato en lugar seguro y apaga el motor. Espera al menos 30 minutos a que enfrie y revisa el nivel de liquido refrigerante.',
-	'Monitorea el termostato, el electroventilador y el estado del radiador para evitar sobrecalentamientos que puedan danar la junta de culata.',
+	'Motor demasiado caliente',
+	'Deten el auto en un lugar seguro y apaga el motor de inmediato. Espera al menos 30 minutos a que enfrie y revisa el nivel del liquido refrigerante.',
+	'Revisa seguido el termostato, el ventilador del radiador y el radiador, para evitar que el motor se caliente demasiado y se danen sus piezas internas.',
 	cat_refrigeracion,
 	'assets/motor_sobrecalentado.png'
 ).
 
 problema_info(
 	radiador_con_fuga,
-	'Fuga en el radiador o rotura de manguera de refrigerante',
-	'No abras el tapon del radiador caliente. Espera a que el motor enfrie, localiza la fuga en mangueras o radiador y rellena con refrigerante.',
-	'Inspecciona las abrazaderas y mangueras de refrigeracion en busca de fisuras o hinchazon cada 20.000 kilometros.',
+	'Fuga en el radiador o en una manguera',
+	'No abras el tapon del radiador si esta caliente. Espera a que enfrie, busca por donde sale el liquido y rellena con refrigerante.',
+	'Revisa las mangueras y abrazaderas cada 20.000 km para encontrar rajaduras o partes hinchadas.',
 	cat_refrigeracion,
 	'assets/radiador_con_fuga.png'
 ).
 
 problema_info(
 	nivel_aceite_bajo,
-	'Nivel critico o falta de presion de aceite del motor',
-	'Apaga el motor de inmediato para evitar dano mecanico severo. Extrae la varilla de medicion, comprueba el nivel y anade aceite con la viscosidad recomendada.',
-	'Revisa el nivel de aceite cada 1.000 km con el vehiculo en plano y en frio, y efectua el cambio de aceite y filtro segun el manual.',
+	'Falta de aceite o baja presion de aceite',
+	'Apaga el motor de inmediato para no danarlo. Saca la varilla, revisa el nivel y agrega aceite del tipo recomendado.',
+	'Revisa el nivel de aceite cada 1.000 km con el auto en un lugar plano y el motor frio, y cambia el aceite y el filtro segun el manual.',
 	cat_lubricacion,
 	'assets/nivel_aceite_bajo.png'
 ).
 
 problema_info(
 	desgaste_arbol_levas,
-	'Falta de lubricacion en balancines o taques hidraulicos',
-	'Revisa con urgencia el nivel y presion de aceite en un taller mecanico para limpiar conductos de lubricacion y evaluar desgaste de los taques.',
-	'Utiliza siempre aceite homologado con la viscosidad exacta que indica el fabricante para asegurar correcta presion en la culata.',
+	'Falta de lubricacion en las piezas internas del motor',
+	'Lleva el auto cuanto antes a un taller para revisar el nivel y la presion del aceite, limpiar los conductos y ver si hay piezas desgastadas.',
+	'Usa siempre el aceite que recomienda el fabricante, con el tipo exacto, para que el motor se lubrique bien.',
 	cat_lubricacion,
 	'assets/desgaste_arbol_levas.png'
 ).
 
 problema_info(
 	fuga_liquido_frenos,
-	'Fuga o perdida de presion hidraulica en frenos',
-	'No circules con el vehiculo si el pedal se va al fondo. Revisa el deposito de frenos, anade liquido DOT 3 o DOT 4 y traslada el vehiculo en grua al taller.',
-	'Inspecciona mangueras de freno y bombines en cada cambio de pastillas y cambia todo el fluido cada 2 anos.',
+	'Fuga de liquido de frenos',
+	'No manejes si el pedal del freno se va al fondo. Revisa el deposito de liquido de frenos, agrega DOT 3 o DOT 4 y lleva el auto en grua al taller.',
+	'Revisa las mangueras y piezas de los frenos cada vez que cambies las pastillas, y cambia el liquido de frenos cada 2 anos.',
 	cat_frenos,
 	'assets/fuga_liquido_frenos.png'
 ).
 
 problema_info(
 	frenos_desgastados,
-	'Pastillas de freno desgastadas al limite',
-	'Acude al taller para sustituir inmediatamente las pastillas de freno y verificar si los discos sufrieron danos por rozamiento de metal con metal.',
-	'Revisa el grosor de las pastillas de freno cada 10.000 km y sustituyelas antes de que el grosor del material de friccion sea inferior a 3 mm.',
+	'Pastillas de freno gastadas',
+	'Ve al taller para cambiar las pastillas de freno cuanto antes y revisar si los discos se danaron.',
+	'Revisa el grosor de las pastillas cada 10.000 km y cambialas antes de que queden con menos de 3 mm.',
 	cat_frenos,
 	'assets/frenos_desgastados.png'
 ).
 
 problema_info(
 	discos_freno_alabeados,
-	'Discos de freno alabeados o deformados',
-	'Lleva el automovil a un taller de frenos para medir el alabeo de los discos con reloj comparador y proceder a su rectificacion o sustitucion.',
-	'Evita lavar el vehiculo o mojar los frenos con agua fria inmediatamente despues de frenadas intensas y continuas en descensos.',
+	'Discos de freno deformados',
+	'Lleva el auto a un taller de frenos para medir si los discos estan deformados y decidir si se rectifican o se cambian.',
+	'No laves el auto ni mojes los frenos con agua fria justo despues de frenar fuerte varias veces en una bajada.',
 	cat_frenos,
 	'assets/discos_freno_alabeados.png'
 ).
 
 problema_info(
 	sensor_mal_calibrado,
-	'Falla registrada en sensores de gestion de motor (Check Engine)',
-	'Conecta un escaner al puerto OBD-II del automovil para obtener el codigo de falla especifico (sensor MAF, MAP, oxigeno o posicion del ciguenal).',
-	'Realiza afinamiento electronico preventivo y limpieza de sensores y conectores para prevenir lecturas erroneas en la computadora (ECU).',
+	'Aviso del motor encendido (Check Engine)',
+	'Conecta un escaner en la entrada OBD-II del auto para leer el codigo de falla y saber que sensor esta fallando.',
+	'Haz revisiones electronicas preventivas y limpia los sensores y conectores para evitar lecturas equivocadas de la computadora.',
 	cat_electronico,
 	'assets/sensor_mal_calibrados.png'
 ).
 
 problema_info(
 	inyectores_sucios,
-	'Inyectores obstruidos o cuerpo de aceleracion sucio',
-	'Aplica un limpiador de inyectores en el combustible o lleva el riel de inyeccion a un laboratorio para limpieza por ultrasonido y calibracion.',
-	'Sustituye el filtro de gasolina en los periodos recomendados y realiza limpieza al cuerpo de aceleracion cada 30.000 km.',
+	'Inyectores sucios o suciedad en la entrada de aire',
+	'Agrega un limpiador de inyectores en el combustible o lleva los inyectores a un taller para limpiarlos y calibrarlos.',
+	'Cambia el filtro de gasolina cuando corresponda y limpia la pieza por donde entra el aire (cuerpo de aceleracion) cada 30.000 km.',
 	cat_combustible,
 	'assets/inyectores_sucios.png'
 ).
 
 problema_info(
 	bujias_defectuosas,
-	'Bujias de encendido desgastadas o defectuosas',
-	'Extrae las bujias, verifica la holgura del electrodo y sustituye el juego completo por bujias nuevas con el grado termico correspondiente.',
-	'Reemplaza las bujias segun el kilometraje especificado (cada 30.000 km para bujias de cobre o hasta 80.000 km para bujias de iridio).',
+	'Bujias gastadas o en mal estado',
+	'Saca las bujias, revisa la separacion de la punta y cambia las cuatro por bujias nuevas del tipo que indica el manual.',
+	'Cambia las bujias segun el kilometraje recomendado: cada 30.000 km las de cobre o hasta 80.000 km las de iridio.',
 	cat_encendido,
 	'assets/bujias_defectuosas.png'
 ).
 
 problema_info(
 	bobina_encendido_defectuosa,
-	'Bobina de encendido deteriorada o cables con fuga',
-	'Prueba la continuidad y resistencia de las bobinas de encendido con un multimetro y reemplaza la bobina del cilindro que presenta fallos.',
-	'Revisa el estado del aislamiento de las bobinas y cables de bujia para evitar perdidas de chispa producidas por humedad o calor.',
+	'Bobina de encendido o cables de bujia en mal estado',
+	'Revisa con un medidor la bobina de encendido y cambia la del cilindro que esta fallando.',
+	'Revisa que las bobinas y los cables de las bujias no esten rotos ni humedos, para evitar que se pierda la chispa.',
 	cat_encendido,
 	'assets/bobina_encendido_defectuosa.png'
 ).
 
 problema_info(
 	falla_embrague,
-	'Desgaste del disco o plato de presion del embrague',
-	'Lleva el vehiculo a un taller mecanico para sustituir el kit completo de embrague (disco, plato de presion y balinera de empuje).',
-	'Evita apoyar el pie sobre el pedal de embrague mientras manejas y no mantengas el embrague pisado durante paradas en semaforos.',
+	'Embrague gastado',
+	'Lleva el auto a un taller para cambiar el kit completo de embrague (disco, plato y rodamiento).',
+	'No dejes el pie apoyado en el pedal del embrague mientras manejas ni lo mantengas pisado cuando estes detenido en un semaforo.',
 	cat_transmision,
 	'assets/falla_embrague.png'
 ).
 
 problema_info(
 	sincronizadores_transmision,
-	'Desgaste en sincronizadores de la caja de cambios',
-	'Revisa el nivel y estado de la valvulina de la transmision manual y acude al taller para graduar el varillaje o revisar sincronizadores.',
-	'Cambia el aceite de la transmision segun el intervalo del fabricante y realiza los cambios de marcha de forma suave y acompasada.',
+	'Piezas de la caja de cambios gastadas',
+	'Revisa el nivel y el estado del aceite de la caja de cambios y ve al taller para ajustar la palanca o revisar las piezas internas.',
+	'Cambia el aceite de la caja de cambios cuando lo indique el fabricante y cambia de marcha con suavidad.',
 	cat_transmision,
 	'assets/sincronizadores_transmision.png'
 ).
 
 problema_info(
 	presion_neumaticos_baja,
-	'Presion baja de aire o pinchadura en un neumatico',
-	'Inspecciona las ruedas en busca de clavos o deformaciones y calibra la presion de aire en una estacion de servicio segun la etiqueta del vehiculo.',
-	'Verifica la presion de inflado de las cuatro llantas y la de repuesto cada dos semanas, preferentemente cuando las ruedas esten frias.',
+	'Llanta baja de aire o pinchada',
+	'Revisa las ruedas por si tienen clavos o estan deformadas y calibralas con la presion que indica la etiqueta del auto.',
+	'Revisa la presion de las cuatro llantas y la de repuesto cada dos semanas, preferiblemente con las ruedas frias.',
 	cat_neumaticos,
 	'assets/presion_neumaticos_baja.png'
 ).
 
 problema_info(
 	direccion_asistida_defectuosa,
-	'Falla en la bomba o falta de fluido en la direccion asistida',
-	'Revisa el deposito de fluido de la direccion hidraulica, anade liquido ATF/direccion asistida y revisa fugas en la bomba o cremallera.',
-	'Verifica el estado del fluido de direccion asistida y comprueba que la correa de la bomba mantenga la tension correcta.',
+	'Falla de la direccion asistida o falta de liquido',
+	'Revisa el deposito del liquido de direccion, agregalo si esta bajo y busca fugas en la bomba o en la cremallera.',
+	'Revisa seguido el estado del liquido de direccion y que la correa de la bomba este bien tensa.',
 	cat_mecanico,
 	'assets/direccion_asistida_defectuosa.png'
 ).
 
 problema_info(
 	filtro_aire_obstruido,
-	'Filtro de aire del motor saturado de suciedad',
-	'Destapa la caja portafiltros y sustituye el filtro de aire por uno nuevo para recuperar el caudal optimo de oxigeno hacia la combustion.',
-	'Inspecciona el filtro de aire cada 10.000 km y renuevalo con mayor frecuencia si conduces frecuentemente por vias destapadas o polvorientas.',
+	'Filtro de aire muy sucio',
+	'Abre la caja del filtro y cambia el filtro de aire por uno nuevo para que el motor reciba mas aire.',
+	'Revisa el filtro de aire cada 10.000 km y cambialo mas seguido si manejas por caminos de tierra o con mucho polvo.',
 	cat_admision,
 	'assets/filtro_aire_obstruido.png'
 ).
 
 problema_info(
 	desgaste_anillos_motor,
-	'Desgaste en anillos de piston o retenes de valvula',
-	'Mide la compresion de los cilindros en un taller mecanico para determinar el estado de sellado de los anillos y guias de valvula.',
-	'No extiendas los intervalos de cambio de aceite y filtro para evitar que la carbonilla desgaste prematuramente las paredes del cilindro.',
+	'Anillos del piston o sellos de valvula desgastados',
+	'Lleva el auto a un taller para medir la compresion de los cilindros y saber si los anillos o los sellos estan sellando bien.',
+	'No alargues los cambios de aceite y filtro, para que la suciedad no desgaste las paredes de los cilindros.',
 	cat_mecanico,
 	'assets/desgaste_anillos_motor.png'
 ).
